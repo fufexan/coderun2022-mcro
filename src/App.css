@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+
+.board {
+  border: 2px solid black;
+  background: black;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 2px;
+}
+
+.squares {
+  background: lightgray;
+  border: none;
+  font-size: 5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.X {
+  color: red;
+}
+.O {
+  color: green;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.non-game {
+  padding: 2px 3px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 1px;
+}
+
+li {
+  list-style: none;
+}
+
+.game {
+  display: flex;
+  justify-content: space-between;
+}
